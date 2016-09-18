@@ -1,0 +1,92 @@
+<div class="content-holder">
+	    <div class="ui segment main" id="order-complete">	    
+		    	<div class="ui secondary menu">
+		    		<a href="" class="item">
+		    		<img src="assets/logo/feedme_logo.png" alt="Food Logo" height="15">
+		    		Feed me
+		    		</a>		    		
+		    		<div class="right menu">
+			    		<a href="" class="item">ORDER
+							<img src="assets/icons/arrow_process@2x.png" alt="finish" height="10">			
+			    		</a>
+			    		<a href="" class="item current">ADDRESS  
+							
+			    		</a>
+			    		<a href="" class="item ">
+			    		<img src="assets/icons/arrow_process@2x.png" alt="before-finish" height="10">	FINISH</a>
+			    		&nbsp;&nbsp;&nbsp;&nbsp;
+			    		<a ng-click="cancelOrder()" class="ui red button">
+			    		<img src="assets/icons/cancel_icon.png" alt="cancel" height="10">
+			    		CANCEL ORDER</a>    			
+		    		</div>
+		    	</div>	    	
+	    </div>
+	    
+	    	<article id="form-container">
+			    <article class="ui center aligned segment">
+
+			    <div class="ui center aligned grid">
+	    		   <form name="orderB" class="ui form" id="order-form-1" novalidate>	
+	    		   <h3 class="ui header">Delivery Address</h3>  
+	    		   <p class="error" ng-if="orderB.firstname.$invalid && orderB.firstname.$dirty|| orderB.lastname.$invalid && orderB.lastname.$dirty|| orderB.street.$invalid && orderB.street.$dirty|| orderB.city.$invalid && orderB.city.$dirty">
+	    		   	  Please Enter only characters
+	    		   </p>  	
+	    		   <p class="error" ng-if="orderB.houseNum.$invalid &&  orderB.houseNum.$dirty|| orderB.postcode.$invalid && orderB.postcode.$dirty">
+	    		   	  Please Enter only numbers 0-9
+	    		   </p> 	
+	    			<div class="field">
+					    <label>First Name</label>
+					    <input type="text" name="firstname" placeholder="First Name" ng-required="true" ng-minlength="3" ng-pattern="matchPattern" ng-model="data.firstname">
+					</div>
+					<div class="field">
+		              <label>Last Name</label>
+		              <input type="text" name="lastname" placeholder="Surname" ng-required="true" ng-minlength="3" ng-pattern="matchPattern" ng-model="data.lastname" >
+                    </div>
+                    <div class="field">
+		              <label>Street/No</label>
+		              <div class="fields">
+		                <div class="twelve wide field">
+		                  <input type="text" name="street" placeholder="Street Address" ng-required="true" ng-minlength="5" ng-pattern="matchPattern" ng-model="data.street">
+		                </div>
+		                <div class="four wide field">
+		                  <input type="text" name="houseNum" placeholder="No"
+		                  ng-minlength="1" ng-pattern="houseNumPattern" required ng-model="data.num">
+		                </div>
+		              </div>
+                    </div>
+
+                    <div class="field">
+		              <label>POSTCODE/CITY</label>
+		              <div class="fields">
+		                <div class="six wide field">
+		                  <input type="text" name="postcode" placeholder="Post Code" ng-required="true" ng-minlength="4"  ng-model="data.postcode"ng-pattern="houseNumPattern">
+		                </div>
+		                <div class="ten wide field">
+		                  <input type="text" name="city" placeholder="City"
+		                  ng-required="true" ng-minlength="3" ng-model="data.city" ng-pattern="streetPattern">
+		                </div>
+		              </div>
+            		</div>
+			</form>
+	    		</div>
+      	   
+      	      <h2 class="ui divider"></h2>
+
+			      <a  class="ui link base" ng-click="backButton()">
+			       
+			        <img src="assets/icons/back_arrow@2x.png" alt="next_icon" height="10">
+			        Back
+			    		</a>  	        
+      			 
+      			 <button ng-disabled="orderB.$invalid" class="ui red button" ng-click="getContactDetails()">
+			        Next
+			        <img src="assets/icons/next_icon.png" alt="" height="10">
+			    		</button>  	        
+      			 </div>
+				
+				</article>
+
+      	</article>
+
+      	
+</div>

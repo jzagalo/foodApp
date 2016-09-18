@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="semantic/css/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="content-holder">
+	   <div class="ui segment main" id="order-complete">	    
+		    	<div class="ui secondary menu">
+		    		<a href="" class="item">
+		    		<img src="assets/logo/feedme_logo.png" alt="Food Logo" height="15">
+		    		Feed me
+		    		</a>		    		
+		    		<div class="right menu">
+			    		<a href="" class="item current">ORDER
+									
+			    		</a>
+			    		<a href="" class="item">
+							<img src="assets/icons/arrow_process@2x.png" alt="before-finish" height="10">	
+			    		ADDRESS  
+							<img src="assets/icons/arrow_process@2x.png" alt="finish" height="10">	
+			    		</a>
+			    		<a href="" class="item">FINISH</a>
+			    		&nbsp;&nbsp;&nbsp;&nbsp;
+			    		<button  class="ui red button">
+			    		<img src="assets/icons/cancel_icon.png" alt="cancel" height="10">
+			    		CANCEL ORDER</button>    			
+		    		</div>
+		    	</div>	    	
+	    </div>
+	    
+	    	<article id="form-container">
+			    <article class="ui center aligned segment">
+
+			    <div class="ui center aligned grid">
+	    		   <form name="orderA" class="ui form" id="order-form-1">	
+	    		   <h3 class="ui header">Your Order</h3>    		
+	    			<div class="grouped fields">
+    					<label>What's your favorite fruit?</label>
+
+					    <div class="field">
+					      <div class="ui radio checkbox">
+					        <input type="radio" name="fruit" tabindex="0" >
+					        <label>Apples</label>
+					      </div>
+					    </div>
+					    <div class="field">
+					      <div class="ui radio checkbox">
+					        <input type="radio" name="fruit" tabindex="0">
+					        <label>Oranges</label>
+					      </div>
+					    </div>
+					    <div class="field">
+					      <div class="ui radio checkbox">
+					        <input type="radio" name="fruit" tabindex="0" >
+					        <label>Pears</label>
+					      </div>
+					    </div>
+					 
+					</div>
+	       
+	          				
+				  <div class="field" style="max-width:300px;">
+				    <label>Country</label>
+				    <select multiple="" class="ui dropdown">
+				      <option value="">Select Country</option>    
+				      <option value="AI">Anguilla</option>  
+				      <option value="AG">Antigua and Barbuda</option>  
+				      <option value="AW">Aruba</option>     
+				      <option value="BM">Bermuda</option>     
+				      <option value="BQ">Bonaire, Sint Eustatius and Saba</option>      
+				      <option value="BV">Bouvet Island</option>    
+				      <option value="IO">British Indian Ocean Territory</option>     
+				    </select>
+				  </div>
+		
+	
+			<div class="ui center aligned column">	
+			  <div class="inline field">
+			    <div class="ui toggle checkbox">
+			     <label>Toggle</label>
+			     <br/><br/>
+			      <input type="checkbox" tabindex="0" class="hidden">
+			      
+			    </div>
+			  </div>			
+			</div>
+
+			</form>
+
+	    		</div>
+      	   
+      	      <h2 class="ui divider"></h2>    
+ 				 <div class="ui centered column grid" id="order-btn">			        
+			        <button  class="ui red button">
+			        Next
+			        <img src="assets/icons/next_icon.png" alt="next_icon" height="10">
+			    		</button>  	        
+      			 </div>
+				
+				</article>
+
+      	</article>
+
+      	
+</div>
+
+<script src="semantic/js/jquery.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="semantic/js/semantic.min.js"></script>
+
+<script>
+  $('.ui.dropdown').dropdown({maxSelections: 3});
+  $('.ui.checkbox').checkbox();
+</script>
+     
+</body>
+
+</html>

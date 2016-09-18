@@ -1,0 +1,180 @@
+
+
+body, html{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial Rounded MT', sans-serif;
+	
+	font-weight: 200;
+	/*font-size: 14px;*/
+	
+}
+
+#mainHead{
+	margin: 40px 40px 0 40px;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+}
+#menu{
+	max-width: : 1024px;
+	margin: 0 auto;
+}
+#header{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.ui.centered.grid>.column:not(.aligned):not(.row){
+	text-align: center;
+}
+body.pushed{
+	overflow:hidden;
+}
+#m_menu a.item.column{
+	text-align: center;
+}
+#mainImage{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+
+
+#m_btn{display:none;
+}
+
+#footer{
+	background: #eee;
+	border-top: 1px solid #ddd;
+	width: 100%;
+	clear:both;
+	float:left;
+	z-index: 0;
+	font-size: 16px;
+	overflow: hidden;
+	padding: 15px 20px;
+	box-sizing:border-box;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 200;
+	vertical-align: center;
+	color:#4F4F4B;
+}
+#footer a{
+	text-decoration: none;
+	color:#666;
+}
+
+#footer a:hover{
+	color: :orange;
+}
+#footer p{
+	line-height: 180%;
+}
+#homethree{
+	padding: 15px 20px;
+	box-sizing:border-box;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 200;
+	font-style: 16px;
+}
+#homethree h3{
+text-align: center;
+}
+#homethree img{
+margin: 0 auto;
+width: 200px;
+}
+
+#centered
+{
+	margin-top: 20px;
+}
+
+/* About Page*/
+div.breadcrumb a{
+	text-decoration: none;
+	color: #777;
+	display:block;
+}
+div.breadcrumb a:hover{
+	color:orange;
+}
+
+#about-content{
+	padding: 15px 20px;
+	box-sizing:border-box;
+	width: 100%;
+	font-size: 16px;
+}
+
+#about-content p{
+	line-height: 180%;
+	text-align: justify;
+}
+
+
+
+
+/* Media Queries*/
+@media all and (min-width: 900px)
+{
+	#mainHeader .header
+	{
+		margin-top: 10%;
+	}
+}
+@media all and (min-width: 730px)
+{
+	#mainHeader .ui.header.huge{
+		font-size: 1.7em;
+	}
+}
+
+@media all and (min-width: 631px)
+{
+	html body.pushed{
+		margin-left: 0 !important;
+	}
+	#m_menu.active{
+		display: none;
+	}
+	#mainHead h2{
+		display: none;
+	}
+
+	#mainHeader .ui.header.ihuge{
+		display: none;
+	}
+}
+@media all and (min-width: 631px)
+{
+	html body.pushed{
+		margin-left: 0 !important;
+	}
+	#m_menu.active{
+		display: none;
+	}
+}
+
+
+@media all and (max-width: 630px)
+{
+	#menu{
+		display: none;
+	}
+	#m_btn{
+		display:inline-block;
+	}
+	html body.pushed{
+		overflow: hidden;
+	}
+	
+	#lg{
+		display: none;
+	}
+
+}

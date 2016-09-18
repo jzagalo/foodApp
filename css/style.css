@@ -1,0 +1,280 @@
+*{
+   font-family:"PT Sans", sans-serif; 
+   margin:0;
+   padding:0;
+   text-rendering:  optimizeLegibility
+}
+body{
+	
+	font-size: 13px;
+	-webkit-font-smoothing: antialiased;
+	font-weight:400;
+    background-image:url('../assets/background-picture.png');
+    background-size:cover;
+    color:#fff;
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+.content-holder{
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    background:rgba(175,170,170,0.48);
+    position: absolute;
+    top:0;
+    bottom: 0;
+}
+
+#body-segment, #bottom-segment{
+    background: transparent;
+    border: 0px;
+    box-shadow: none;
+    padding-top:4em; 
+
+}
+#bottom-segment{
+     padding-top:2em; 
+}
+#body-segment h2{
+    color:#fff;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing: 1.2px;
+    word-spacing: 1.2px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+#body-segment h4, .ui.segment h4{
+    color:#fff;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing: 1.1px;
+    font-weight: 300;    
+}
+#body-segment h4 span{
+    border-bottom: 2px solid red;
+    padding-bottom: 2px;  
+}
+
+#middle-segment{
+    padding:2.5em 1em;
+    margin-top: 4em;
+}
+#middle-segment img{
+    margin-right:5px;
+}
+#middle-segment button{
+    font-size: 14px;
+    font-family:'PT Sans', sans-serif;
+   line-height: 20px;
+   font-weight: 400;
+
+}
+.ui.button , .ui.red.button{    
+    box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset, 0px -0.3em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    user-select: none;
+    transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ui.primary.button {
+    box-shadow: 0px -0.3em 0px 0px rgba(34, 36, 38, 0.15) inset; 
+}
+.ui.primary.button:hover , .ui.red.button:hover{
+ 	box-shadow: none;
+ }
+#main{
+    background-color:rgba(234, 234, 234, 0.10);
+    border-radius:0px;
+}
+
+#main .item{
+    color:#fff;
+}
+
+.ui.segment{
+    border-radius: 0;    
+}
+.right.menu button{
+    font-size:12px;
+    font-family: 'PT Sans', sans-serif;
+}
+.menu > .a:hover, .right.menu >.a:hover{
+    background: none;
+    color:#333;
+}
+#order-form-1 {
+    padding:1em 0;
+}
+
+#order-form-1 > div, #form-container{
+        margin-top: 2.5em;
+}
+
+#form-container{
+    width:460px;
+    margin:0 auto;
+    margin-top: 50px;
+}
+#order-btn{
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+article.ui.segment{
+    padding: 1em 0em;
+}
+.ui.form .grouped.fields .field{
+   /* display:table-cell;
+    padding: 0.5em;*/
+
+}
+img[alt="next_icon"]{
+    margin-left: 10px;
+}
+form[name="orderB"] > div{
+    margin-top: 1em !important;
+    width:250px;
+}
+
+form[name="orderB"] > div > label{
+    text-align:left;
+    text-transform: uppercase !important;
+    font-size: 14px;
+}
+form[name="orderB"] input{
+    border-radius: 0;    
+}
+form[name="orderB"].ui.form .field input{
+    border-radius: 0; 
+    background: rgba(234,230,230,0.41);   
+}
+::-webkit-input-placeholder {  
+   font-family: 'PT Sans', sans-serif;
+   font-size: 13px;
+}
+
+:-moz-placeholder { /* Firefox 18- */    
+ font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */    
+  font-family: 'PT Sans', sans-serif;
+   font-size: 13px;
+}
+
+:-ms-input-placeholder {  
+   font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+   
+}
+a.ui.link.base{
+    position: relative; 
+    right:150px;   
+    font-size: 14px
+    color:rgb(0,0,0);
+}
+.ui.link:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+    padding-top: 0;
+    width: 250px;
+}
+tr>td:first-child{
+    text-align: left;
+} 
+.ui.table tr > td:nth-child(2){
+    text-align: right;
+}
+
+td{
+    font-size: 13px;
+    padding:0;
+    margin:0;
+}
+#order{
+    background: transparent;
+    border:none;
+    box-shadow: none;
+}
+
+#order-complete{
+    color:fff;
+}
+#order-complete .right.menu button{
+    border-radius: 0;
+}
+#order-complete .right.menu button i{
+    font-size: 13px;
+}
+#order-complete .right.menu > .item:after{
+    margin-right:5px;
+}
+
+.ui.menu .item>img:not(.ui) {
+    width:20px;
+    padding-right: 5px !important;
+}
+div[data-tab="complete"]{
+    background: rgb(224, 111, 111);
+}
+.ui.header:first-child{
+    margin-top: 2em;
+}
+.ui.header:first-child + h5{
+    margin-bottom: 2em;
+}
+img[alt="finish"]{
+    position: relative;
+    left:15px;
+}
+.ui.secondary.menu a.item:hover, .ui.menu a.item:hover{
+    background: none;
+    box-shadow: none;
+    border-radius:0;
+}
+img[alt="cancel"]{
+    position: relative;
+    right:8px;
+}
+.ui.secondary.menu a.item, .ui.menu a.item{
+   font-size:12px;
+   border-radius:0;
+}
+.item.current{
+    border-bottom: 2px solid red !important;
+}
+img[alt="before-finish"] {  position: relative;
+    right:15px;
+}
+.ui.checkbox input.hidden {
+     z-index: 5 !important;
+}
+
+form[name="orderB"] .ng-invalid.ng-dirty{
+    background-color: lightpink !important;
+}
+form[name="orderB"] .ng-valid.ng-dirty{
+    background-color: lightgreen !important;
+}
+p.error{
+    color:red;
+}
+.ui.table td{
+    padding: 0.4em;
+}
+.ui.table td{
+    border:none;
+}
+.ui.celled.table tr td{
+    border-top: none;
+    border-left: none;
+}
+.ui.table thead th{
+    border-bottom: none;
+}
