@@ -1,7 +1,5 @@
-var app = angular.module('FoodApp', ['ngRoute']);
+var app = angular.module('FoodApp', ['ngRoute', 'ngAnimate']);
 app.run(function($rootScope, $templateCache) {
 	$rootScope.showIndex = true;
-	/* $rootScope.$on('$viewContentLoaded', function() {
-     $templateCache.removeAll();
-   });*/
+	
 });
